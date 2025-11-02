@@ -18,12 +18,12 @@ export default async function RootLayout({
 	return (
 		<Root>
 			{/* <GoogleTagManager gtmId="" /> */}
-			<body className="bg-canvas text-ink antialiased">
+			<body className="flex min-h-screen flex-col bg-canvas text-ink antialiased">
 				<NuqsAdapter>
 					<SkipToContent />
 					<Announcement />
 					<Header />
-					<main id="main-content" role="main" tabIndex={-1}>
+					<main id="main-content" role="main" tabIndex={-1} className="flex-1">
 						{children}
 					</main>
 					<Footer />
